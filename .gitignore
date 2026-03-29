@@ -1,0 +1,62 @@
+# ======================
+# Python (backend)
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+# ======================
+# Angular / Node (frontend)
+# ======================
+node_modules/
+dist/
+tmp/
+out-tsc/
+bazel-out/
+.angular/
+.angular/cache/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ======================
+# IDEs and editors
+# ======================
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.history/
+
+# ======================
+# Miscellaneous
+# ======================
+.sass-cache/
+connect.lock
+libpeerconnection.log
+testem.log
+typings/
+__screenshots__/
+
+# ======================
+# System files
+# ======================
+.DS_Store
+Thumbs.db
