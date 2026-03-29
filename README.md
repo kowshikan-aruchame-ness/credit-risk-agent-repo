@@ -23,13 +23,13 @@ This project **requires Node 20**, so set it manually.
 ### ▶️ Temporary (current terminal only)
 
 ```bash
-export PATH=~/project/workspace/node20/bin:$PATH
+export PATH=~/project/workspace/credit-risk-agent-repo/node20/bin:$PATH
 ```
 
 ### ▶️ Permanent setup (run one by one)
 
 ```bash
-echo 'export PATH=~/project/workspace/node20/bin:$PATH' >> ~/.bashrc
+echo 'export PATH=~/project/workspace/credit-risk-agent-repo/node20/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 
