@@ -17,6 +17,7 @@ export class App {
   result: any = null;
   newsList: string[] = [];
   loading = false;
+  errorMessage: string | null = null;
 
   constructor(private riskService: RiskService, private cdr: ChangeDetectorRef) {}
 
@@ -24,6 +25,7 @@ export class App {
     if (!this.company) return;
 
     this.loading = true;
+    this.errorMessage = null;
 
     this.riskService.analyze(this.company).subscribe({
       next: (res: any) => {
@@ -35,7 +37,9 @@ export class App {
       },
       error: (err) => {
         console.error(err);
+        this.errorMessage = 'Failed to analyze company. Please try again.';
         this.loading = false;
+        this.cdr.detectChanges();
       }
     });
   }

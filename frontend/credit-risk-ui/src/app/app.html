@@ -13,11 +13,23 @@
           <button class="btn btn-primary w-100" (click)="analyze()">Analyze</button>
         </div>
       </div>
+      <!-- ERROR -->
+      <div *ngIf="errorMessage" class="alert alert-danger text-center">
+        {{ errorMessage }}
+      </div>
     </div>
   </div>
 
+  <!-- LOADER -->
+  <div *ngIf="loading" class="text-center my-4">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <p class="mt-2">Analyzing company data...</p>
+  </div>
+
   <!-- RESULT -->
-  <div *ngIf="result">
+  <div *ngIf="result && !loading">
 
     <!-- CARDS -->
     <div class="row mb-4">
