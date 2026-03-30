@@ -18,22 +18,16 @@ Make sure you have:
 
 ## ⚠️ Step 1: Use Node 20
 
-This project **requires Node 20**, so set it manually.
-
-### ▶️ Temporary (current terminal only)
-
+# 🟢 Install Node.js (Required)
+ 
+This project requires **Node.js v20**.
+ 
+## ▶️ Step 1: Install using NVM (Recommended)
+ 
 ```bash
-export PATH=~/project/workspace/credit-risk-agent-repo/node20/bin:$PATH
-```
+sudo chown -R $(whoami) /usr/local/nvm
 
-### ▶️ Permanent setup (run one by one)
-
-```bash
-echo 'export PATH=~/project/workspace/credit-risk-agent-repo/node20/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
-```
-
----
+nvm install 20
 
 ## 📂 Step 2: Navigate to frontend folder
 
